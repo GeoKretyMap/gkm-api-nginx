@@ -1,0 +1,4 @@
+if ( $allowed = "deny" ) { return 403; }
+
+include api.geokretymap.org.conf.fastcgi_pass;
+

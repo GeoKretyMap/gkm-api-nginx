@@ -1,0 +1,7 @@
+
+root                 /var/www/html;
+
+include              fastcgi.conf;
+
+fastcgi_read_timeout 300;
+fastcgi_pass         php;
