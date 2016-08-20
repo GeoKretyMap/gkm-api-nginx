@@ -1,2 +1,3 @@
 fastcgi_cache        geokretycache;
+fastcgi_cache_valid  200 5m;
 add_header           X-Cache-Status $upstream_cache_status;
