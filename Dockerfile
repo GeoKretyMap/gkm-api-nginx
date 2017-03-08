@@ -1,6 +1,7 @@
 FROM nginx:alpine
 
 # Override those files to match your needs
+COPY no_cache.conf /etc/nginx/
 COPY no_req_limit.conf /etc/nginx/
 COPY no_admin_restriction.conf /etc/nginx/
 COPY api.geokretymap.org.conf.fastcgi_cache /etc/nginx/
