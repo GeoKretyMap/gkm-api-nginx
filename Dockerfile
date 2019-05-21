@@ -1,6 +1,7 @@
 FROM nginx:alpine
 
 # Override those files to match your needs
+COPY cors_headers.conf /etc/nginx/
 COPY no_cache.conf /etc/nginx/
 COPY no_req_limit.conf /etc/nginx/
 COPY no_admin_restriction.conf /etc/nginx/
